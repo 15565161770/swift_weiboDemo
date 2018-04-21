@@ -23,10 +23,25 @@ class TWNavigationController: UINavigationController {
         if childViewControllers.count > 0 {
             // 隐藏tabbar
             viewController.hidesBottomBarWhenPushed = true
+            
+            // 判断控制器的类型
+            if let vc = viewController as? TWBaseViewController {
+                var title = "返回"
+                if childViewControllers.count == 1 {
+                    // 显示首页的标题
+                    title = childViewControllers.first?.title ?? "返回"
+                }
+                // 取出自定义的navItem
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParent))
+            }
         }
-        
         super.pushViewController(viewController, animated: true)
-        
+
+    }
+    
+    // 返回到上一级
+    @objc private func popToParent()  {
+        popViewController(animated: true)
     }
 
 }

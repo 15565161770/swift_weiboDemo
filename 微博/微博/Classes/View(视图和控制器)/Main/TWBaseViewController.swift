@@ -12,10 +12,9 @@ class TWBaseViewController: UIViewController {
 
     // 自定义导航条只是一个条子
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
-    // 自定义导航条目内容
+    // 自定义导航条目内容 -- 以后设置导航栏内容统一使用navItem
+    
     lazy var navItem = UINavigationItem()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +24,9 @@ class TWBaseViewController: UIViewController {
         // 添加导航条
         view.addSubview(navigationBar)
         navigationBar.items = [navItem]
+        
+        // 设置navBar的渲染颜色
+        navigationBar.barTintColor =  UIColor.cz_color(withHex: 0xF6F6F6)
     }
     
     // 重写 title的didset方法

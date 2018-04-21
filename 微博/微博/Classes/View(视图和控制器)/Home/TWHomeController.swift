@@ -26,7 +26,7 @@ class TWHomeController: TWBaseViewController {
         super.setupUI()
         
         // 设置导航栏按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriends))
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriends))
         
     }
 }
