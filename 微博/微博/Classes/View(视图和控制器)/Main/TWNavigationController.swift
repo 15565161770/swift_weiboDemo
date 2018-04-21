@@ -12,14 +12,34 @@ class TWNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // 重写push方法
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        
+        // 如果不是栈底控制器才去隐藏，跟控制器不需要处理
+        if childViewControllers.count > 0 {
+            // 隐藏tabbar
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        
+        super.pushViewController(viewController, animated: true)
+        
     }
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

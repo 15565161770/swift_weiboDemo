@@ -35,6 +35,7 @@
 		18068901208B3F4F0093131D /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FB208B3F4F0093131D /* UIBarButtonItem+Extensions.swift */; };
 		18068902208B3F4F0093131D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FC208B3F4F0093131D /* UIImage+Extensions.swift */; };
 		18068903208B3F4F0093131D /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */; };
+		188BFF9B208B714700302CA5 /* TWDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BFF9A208B714700302CA5 /* TWDemoController.swift */; };
 		DCB14897BE673D695B3F28F9 /* Pods___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29247693A2D64B4D6AAF130 /* Pods___.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,9 +84,10 @@
 		180688FB208B3F4F0093131D /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		180688FC208B3F4F0093131D /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		188BFF9A208B714700302CA5 /* TWDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDemoController.swift; sourceTree = "<group>"; };
 		36BFD327F31FD4F4526ABDD4 /* Pods-微博.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.debug.xcconfig"; sourceTree = "<group>"; };
 		A38ADAAE3C45CBD5AC2EE71B /* Pods-微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.release.xcconfig"; sourceTree = "<group>"; };
-		E29247693A2D64B4D6AAF130 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29247693A2D64B4D6AAF130 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		180688BB208B34170093131D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				188BFF96208B711200302CA5 /* 测试 */,
 				180688BC208B34BD0093131D /* TWMainViewController.swift */,
 				180688BE208B34E90093131D /* TWNavigationController.swift */,
 				180688C0208B351F0093131D /* TWBaseViewController.swift */,
@@ -270,6 +273,14 @@
 				180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		188BFF96208B711200302CA5 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				188BFF9A208B714700302CA5 /* TWDemoController.swift */,
+			);
+			path = "测试";
 			sourceTree = "<group>";
 		};
 		9B4C30C6839B1D5789C189F5 /* Frameworks */ = {
@@ -440,6 +451,7 @@
 				180688E6208B39560093131D /* NSArray+Log.m in Sources */,
 				180688EE208B39560093131D /* UILabel+CZAddition.m in Sources */,
 				180688FF208B3F4F0093131D /* Date+Extensions.swift in Sources */,
+				188BFF9B208B714700302CA5 /* TWDemoController.swift in Sources */,
 				18068903208B3F4F0093131D /* UIImageView+WebImage.swift in Sources */,
 				180688C5208B37F60093131D /* TWComposeController.swift in Sources */,
 				180688E7208B39560093131D /* NSAttributedString+CZAdditon.m in Sources */,
