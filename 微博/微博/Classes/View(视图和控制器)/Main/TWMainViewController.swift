@@ -59,26 +59,18 @@ extension TWMainViewController {
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imgName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imgName + "_selected")?.withRenderingMode(.alwaysOriginal)
         
-        // 4 实例化导航控制器的时候，会调用 push 方法将 rootVC 压栈
+        // 设置 tabbar标题颜色
+        // 4. 设置 tabbar 的标题字体（大小）
+        vc.tabBarItem.setTitleTextAttributes(
+            [NSAttributedStringKey.foregroundColor: UIColor.orange],
+            for: .highlighted)
+        // 系统默认是 12 号字，修改字体大小，要设置 Normal 的字体大小
+        vc.tabBarItem.setTitleTextAttributes(
+            [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12)],
+            for: UIControlState(rawValue: 0))
+        
+        // 5 实例化导航控制器的时候，会调用 push 方法将 rootVC 压栈
         let nav = TWNavigationController(rootViewController: vc)
         return nav
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
