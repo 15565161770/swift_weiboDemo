@@ -28,7 +28,10 @@ extension TWMainViewController {
     // 设置所以子控制器
     private func setupChildControllers(){
         let array = [
-            ["clsName":"TWHomeController", "title":"首页", "imgName":""],
+            ["clsName":"TWHomeController", "title":"首页", "imgName":"home"],
+            ["clsName":"TWMessageController", "title":"消息", "imgName":"message_center"],
+            ["clsName":"TWDiscoverController", "title":"发现", "imgName":"discover"],
+            ["clsName":"TWProfileController", "title":"我", "imgName":"profile"],
         ]
         
         var arrayM = [UIViewController]()
@@ -51,6 +54,12 @@ extension TWMainViewController {
         // 1> 将clsName转换成cls
         let vc = cls.init()
         vc.title = title
+        
+        // 3. 设置图像
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imgName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imgName + "_selected")?.withRenderingMode(.alwaysOriginal)
+        
+        // 4 实例化导航控制器的时候，会调用 push 方法将 rootVC 压栈
         let nav = TWNavigationController(rootViewController: vc)
         return nav
     }
