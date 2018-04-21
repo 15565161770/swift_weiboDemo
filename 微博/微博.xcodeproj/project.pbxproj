@@ -29,6 +29,13 @@
 		180688EF208B39560093131D /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180688E1208B39560093131D /* UIScreen+CZAddition.m */; };
 		180688F0208B39560093131D /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180688E3208B39560093131D /* UIView+CZAddition.m */; };
 		180688F1208B39560093131D /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180688E5208B39560093131D /* UIViewController+CZAddition.m */; };
+		180688FE208B3F4F0093131D /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688F8208B3F4F0093131D /* Bundle+Extensions.swift */; };
+		180688FF208B3F4F0093131D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688F9208B3F4F0093131D /* Date+Extensions.swift */; };
+		18068900208B3F4F0093131D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FA208B3F4F0093131D /* String+Extensions.swift */; };
+		18068901208B3F4F0093131D /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FB208B3F4F0093131D /* UIBarButtonItem+Extensions.swift */; };
+		18068902208B3F4F0093131D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FC208B3F4F0093131D /* UIImage+Extensions.swift */; };
+		18068903208B3F4F0093131D /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */; };
+		DCB14897BE673D695B3F28F9 /* Pods___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29247693A2D64B4D6AAF130 /* Pods___.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +77,15 @@
 		180688E4208B39560093131D /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		180688E5208B39560093131D /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		180688F3208B39B60093131D /* Weibo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo-Bridge.h"; sourceTree = "<group>"; };
+		180688F8208B3F4F0093131D /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		180688F9208B3F4F0093131D /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		180688FA208B3F4F0093131D /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		180688FB208B3F4F0093131D /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		180688FC208B3F4F0093131D /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		36BFD327F31FD4F4526ABDD4 /* Pods-微博.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.debug.xcconfig"; sourceTree = "<group>"; };
+		A38ADAAE3C45CBD5AC2EE71B /* Pods-微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-微博/Pods-微博.release.xcconfig"; sourceTree = "<group>"; };
+		E29247693A2D64B4D6AAF130 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB14897BE673D695B3F28F9 /* Pods___.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +105,8 @@
 			children = (
 				1806889E208B2EB90093131D /* 微博 */,
 				1806889D208B2EB90093131D /* Products */,
+				B8588A70FB856D6D71D8DA54 /* Pods */,
+				9B4C30C6839B1D5789C189F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +151,7 @@
 		180688B3208B33760093131D /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				180688F7208B3F4F0093131D /* Extensions */,
 				180688CC208B39560093131D /* Additions */,
 			);
 			path = "Tools(工具)";
@@ -239,6 +259,36 @@
 			path = Additions;
 			sourceTree = "<group>";
 		};
+		180688F7208B3F4F0093131D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				180688F8208B3F4F0093131D /* Bundle+Extensions.swift */,
+				180688F9208B3F4F0093131D /* Date+Extensions.swift */,
+				180688FA208B3F4F0093131D /* String+Extensions.swift */,
+				180688FB208B3F4F0093131D /* UIBarButtonItem+Extensions.swift */,
+				180688FC208B3F4F0093131D /* UIImage+Extensions.swift */,
+				180688FD208B3F4F0093131D /* UIImageView+WebImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B4C30C6839B1D5789C189F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29247693A2D64B4D6AAF130 /* Pods___.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8588A70FB856D6D71D8DA54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36BFD327F31FD4F4526ABDD4 /* Pods-微博.debug.xcconfig */,
+				A38ADAAE3C45CBD5AC2EE71B /* Pods-微博.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180688AE208B2EB90093131D /* Build configuration list for PBXNativeTarget "微博" */;
 			buildPhases = (
+				00FD1BF54118C207BF2103A2 /* [CP] Check Pods Manifest.lock */,
 				18068898208B2EB90093131D /* Sources */,
 				18068899208B2EB90093131D /* Frameworks */,
 				1806889A208B2EB90093131D /* Resources */,
+				A15454B8A82E58D29F505720 /* [CP] Embed Pods Frameworks */,
+				E2E48CE6F561153E5DC5A230 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +358,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FD1BF54118C207BF2103A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-微博-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15454B8A82E58D29F505720 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-微博/Pods-微博-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微博/Pods-微博-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E48CE6F561153E5DC5A230 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微博/Pods-微博-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18068898208B2EB90093131D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -314,21 +431,27 @@
 				180688EB208B39560093131D /* NSString+CZPath.m in Sources */,
 				180688E9208B39560093131D /* NSString+CZBase64.m in Sources */,
 				180688BF208B34E90093131D /* TWNavigationController.swift in Sources */,
+				18068900208B3F4F0093131D /* String+Extensions.swift in Sources */,
 				180688ED208B39560093131D /* UIColor+CZAddition.m in Sources */,
 				180688BD208B34BD0093131D /* TWMainViewController.swift in Sources */,
 				180688C3208B37DA0093131D /* TWHomeController.swift in Sources */,
+				18068901208B3F4F0093131D /* UIBarButtonItem+Extensions.swift in Sources */,
 				180688C7208B38040093131D /* TWDiscoverController.swift in Sources */,
 				180688E6208B39560093131D /* NSArray+Log.m in Sources */,
 				180688EE208B39560093131D /* UILabel+CZAddition.m in Sources */,
+				180688FF208B3F4F0093131D /* Date+Extensions.swift in Sources */,
+				18068903208B3F4F0093131D /* UIImageView+WebImage.swift in Sources */,
 				180688C5208B37F60093131D /* TWComposeController.swift in Sources */,
 				180688E7208B39560093131D /* NSAttributedString+CZAdditon.m in Sources */,
 				180688CB208B38220093131D /* TWProfileController.swift in Sources */,
+				180688FE208B3F4F0093131D /* Bundle+Extensions.swift in Sources */,
 				180688EA208B39560093131D /* NSString+CZHash.m in Sources */,
 				180688C1208B351F0093131D /* TWBaseViewController.swift in Sources */,
 				180688EF208B39560093131D /* UIScreen+CZAddition.m in Sources */,
 				180688A0208B2EB90093131D /* AppDelegate.swift in Sources */,
 				180688EC208B39560093131D /* UIButton+CZAddition.m in Sources */,
 				180688F1208B39560093131D /* UIViewController+CZAddition.m in Sources */,
+				18068902208B3F4F0093131D /* UIImage+Extensions.swift in Sources */,
 				180688E8208B39560093131D /* NSObject+CZRuntime.m in Sources */,
 				180688F0208B39560093131D /* UIView+CZAddition.m in Sources */,
 			);
@@ -446,6 +569,7 @@
 		};
 		180688AF208B2EB90093131D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BFD327F31FD4F4526ABDD4 /* Pods-微博.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -464,6 +588,7 @@
 		};
 		180688B0208B2EB90093131D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38ADAAE3C45CBD5AC2EE71B /* Pods-微博.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
