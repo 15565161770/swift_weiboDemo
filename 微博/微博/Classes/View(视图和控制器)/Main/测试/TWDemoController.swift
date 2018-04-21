@@ -12,7 +12,46 @@ class TWDemoController: TWBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "第\(String(describing: navigationController?.childViewControllers.count ?? 0))个"
     }
+    
+    @objc private func showNext() {
+        let vc = TWDemoController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func setupUI() {
+        super.setupUI()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(showNext))
+    }
+    
 }
+
+extension TWDemoController {
+    // 设置右侧控制器
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -12,7 +12,8 @@ class TWNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // 隐藏默认的NavigationBar
+        navigationBar.isHidden = true
     }
     
     // 重写push方法
