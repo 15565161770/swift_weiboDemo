@@ -14,8 +14,19 @@ class TWMainViewController: UITabBarController {
         super.viewDidLoad()
         // 调用控制器
        setupChildControllers()
+        // 添加按钮
+        setupComposeButton()
+    }
+    
+    // MARK -- 中间按钮监听方法
+    // private 能够帮助方法私有。仅在当前对象被访问
+    // objc允许这个函数在运行时 通过objc的消息机制调用
+    @objc private func composeStatus()  {
+        
     }
 
+    // 定义私有属性
+    private lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
 
 // extension 类似于oc中的分类，在swfit中可以切分代码块
@@ -25,11 +36,27 @@ class TWMainViewController: UITabBarController {
 // MARK -- 设置界面 --
 
 extension TWMainViewController {
+    
+    private func setupComposeButton() {
+        tabBar.addSubview(composeButton)
+        // 计算按钮宽度
+        let count = CGFloat(childViewControllers.count)
+        // 容错点像素为1，将宽度缩小
+        let w = tabBar.bounds.width / count - 1
+        // 正数向内缩进，负数往外扩展
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+        // 添加监听方法
+        composeButton.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
+    }
+    
+    
     // 设置所以子控制器
     private func setupChildControllers(){
         let array = [
             ["clsName":"TWHomeController", "title":"首页", "imgName":"home"],
             ["clsName":"TWMessageController", "title":"消息", "imgName":"message_center"],
+            ["clsName":"UIViewController"],
             ["clsName":"TWDiscoverController", "title":"发现", "imgName":"discover"],
             ["clsName":"TWProfileController", "title":"我", "imgName":"profile"],
         ]
